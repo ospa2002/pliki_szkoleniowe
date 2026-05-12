@@ -1,0 +1,40 @@
+#data czas
+
+
+from datetime import datetime, date, timedelta
+
+
+teraz = datetime.now()
+print(f"Teraz jest: {teraz}")
+
+przyszlosc = teraz + timedelta(days=100)
+print(f"Za 100 dni bedzie: {przyszlosc.date()}, {przyszlosc.time()}")
+
+
+teraz = date.today()
+urodziny = date(2002, 4, 30)
+wynik_dni = (teraz - urodziny).days
+print("Dni, ktore minely:", wynik_dni)
+
+dzisiaj = datetime.now()
+
+print(f"Rok: {dzisiaj.year}")
+print(f"Miesiac: {dzisiaj.month}")
+print(f"Dzien: {dzisiaj.day}")
+print(f"Godzina: {dzisiaj.hour}")
+print(f"Dzien tygodnia: {dzisiaj.weekday()}")
+
+za_tydzien = dzisiaj + timedelta(weeks=1)
+za_30_dni = dzisiaj + timedelta(days=30)
+godzina_pozniej = dzisiaj + timedelta(hours=1)
+
+print(za_tydzien, za_30_dni, godzina_pozniej)
+
+#formatowanie
+
+ladna_data = dzisiaj.strftime("%d.%m.%Y %H:%M")
+print(f"Format europejski: {ladna_data}")
+
+data_z_pliku = "2026-12-31"
+obiekt_daty = datetime.strptime(data_z_pliku, "%Y-%m-%d")
+print(f"Format amerykanski: {obiekt_daty}")

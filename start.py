@@ -1,16 +1,18 @@
+'''
 import cowsay
 print("Hello, World!")
 
 cowsay.pig("Czesc!!!")
 
 print(cowsay.char_names) #nazwy zwierzakow
+'''
 
 """
 wielo
 linij
 kowy
 """
-
+'''
 print("ala","ma","kota")
 print("ala"+"ma"+"kota")
 
@@ -71,3 +73,20 @@ x = 123
 wynik = str(x).rjust(6," ")
 
 print(wynik)
+
+'''
+
+#********************Dzien 2***************************
+
+x = 16.48
+y = 16.71
+print(x-y)
+
+wynik = round(x-y, 2)
+print(wynik)
+
+b = "Hello, World!"
+print(b[2:5])
+
+przecinek = b.find(",")
+print(b[przecinek + 2:])
