@@ -1,0 +1,24 @@
+#bloki warunkowe
+
+temp = 1
+
+if temp <= 15 and temp >= 10:
+    print("ok")
+elif temp > 15:
+    print("cieplo")
+else:
+    print("zimno")
+print("koniec_programu")
+
+x = "str" 
+y = "string"
+
+if x is y:
+    print("true")
+else:
+    print("false")
+
+
+
+
+
