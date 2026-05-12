@@ -30,3 +30,21 @@ data_obiekt = datetime.strptime(data_z_tekstu, '%m/%d/%Y') #parsowanie daty
 wynikowa_data = data_obiekt.strftime('%Y-%m-%d') #zmiana formatu daty na inny - string (tekst)
 print(wynikowa_data)
 
+lista = tekst.split()
+print(lista)
+
+#lista = lista.title()
+
+lista[1] = lista[1].title()
+lista[2] = lista[2].title()
+print(lista[1], lista[2])
+
+znowu_tekst = ' '.join(lista) #przed kropka separator ktory polaczy elementy listy
+print(znowu_tekst)
+
+znowu_tekst = znowu_tekst.replace("Jan", "Piotr").split()
+print(znowu_tekst)
+
+#znowu_lista = znowu_tekst.split()
+#print(znowu_lista)
+
